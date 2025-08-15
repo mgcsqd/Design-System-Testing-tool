@@ -102,6 +102,41 @@
         --space-4000: 20rem;
       }
 
+      /* ===== Desktop (1280–1727px) ===== */
+      @media (min-width: 1280px) {
+        :root {
+          --fs-display-2: var(--space-650);
+          --fs-display-3: var(--space-550);
+          --fs-h1: var(--space-475);
+          --fs-h2: var(--space-400);
+          --fs-h3: var(--space-350);
+          --fs-h4: var(--space-300);
+          --fs-title: var(--space-325);
+          --fs-subtitle: var(--space-275);
+          --fs-large-body: var(--space-250);
+          --fs-body: var(--space-225);
+          --fs-small-body: var(--space-200);
+          --fs-x-small: var(--space-175);
+          --fs-label: var(--space-175);
+          --fs-caption: var(--space-150);
+
+          --lh-display-2: var(--space-650);
+          --lh-display-3: var(--space-550);
+          --lh-h1: var(--space-500);
+          --lh-h2: var(--space-425);
+          --lh-h3: var(--space-375);
+          --lh-h4: var(--space-325);
+          --lh-title: var(--space-325);
+          --lh-subtitle: var(--space-300);
+          --lh-large-body: var(--space-275);
+          --lh-body: var(--space-250);
+          --lh-small-body: var(--space-225);
+          --lh-x-small: var(--space-200);
+          --lh-label: var(--space-175);
+          --lh-caption: var(--space-150);
+        }
+      }
+
       /* ===== Default (≥1728px) ===== */
       :root {
         --fs-display-2: var(--space-675);
@@ -132,11 +167,11 @@
         --lh-small-body: var(--space-250);
         --lh-x-small: var(--space-225);
         --lh-label: var(--space-200);
-        --lh-caption: var(--space-125);
+        --lh-caption: var(--space-150);
       }
 
       /* ===== Tablet (834–1727px) ===== */
-      @media (max-width: 1727px) and (min-width: 834px) {
+      @media (max-width: 1279px) and (min-width: 834px) {
         :root {
           --fs-display-2: var(--space-625);
           --fs-display-3: var(--space-550);
@@ -150,8 +185,8 @@
           --fs-body: var(--space-225);
           --fs-small-body: var(--space-200);
           --fs-x-small: var(--space-175);
-          --fs-label: var(--space-150);
-          --fs-caption: var(--space-125);
+          --fs-label: var(--space-175);
+          --fs-caption: var(--space-150);
 
           --lh-display-2: var(--space-625);
           --lh-display-3: var(--space-550);
@@ -165,8 +200,8 @@
           --lh-body: var(--space-250);
           --lh-small-body: var(--space-225);
           --lh-x-small: var(--space-200);
-          --lh-label: var(--space-150);
-          --lh-caption: var(--space-125);
+          --lh-label: var(--space-175);
+          --lh-caption: var(--space-150);
         }
 
         /* 1) Make #grid flex column on tablet */
@@ -207,7 +242,7 @@
           --lh-body: var(--space-225);
           --lh-small-body: var(--space-200);
           --lh-x-small: var(--space-175);
-          --lh-label: var(--space-125);
+          --lh-label: var(--space-150);
           --lh-caption: var(--space-125);
         }
       }
@@ -247,7 +282,7 @@
           --lh-body: var(--space-225);
           --lh-small-body: var(--space-200);
           --lh-x-small: var(--space-175);
-          --lh-label: var(--space-125);
+          --lh-label: var(--space-150);
           --lh-caption: var(--space-125);
         }
       }
@@ -338,6 +373,15 @@
           <strong>Color Palette Test</strong>
         </summary>
         <div id="color-palette-test"></div>
+      </details>
+    </section>
+
+    <section>
+      <details open>
+        <summary>
+          <strong>Text Color Test</strong>
+        </summary>
+        <div id="text-color-test"></div>
       </details>
     </section>
 
@@ -526,66 +570,97 @@ line-height: var(${lhVar}) → ${lhPx.toFixed(2)}px (${pxToRem(
         {
           title: "Blue",
           colors: [
-            { name: "--blue-50: #EDF7FFFF", value: "#EDF7FFFF" },
-            { name: "--blue-100: #D7ECFFFF", value: "#D7ECFFFF" },
-            { name: "--blue-200: #B7DFFFFF", value: "#B7DFFFFF" },
-            { name: "--blue-300: #86CCFFFF", value: "#86CCFFFF" },
-            { name: "--blue-400: #4DAEFFFF", value: "#4DAEFFFF" },
-            { name: "--blue-500: #248AFFFF", value: "#248AFFFF" },
-            { name: "--blue-600: #0654F5FF", value: "#0654F5FF" },
-            { name: "--blue-600: #0654F5E5", value: "#0654F5E5" },
-            { name: "--blue-600: #0654F5CC", value: "#0654F5CC" },
-            { name: "--blue-600: #0654F5B2", value: "#0654F5B2" },
-            { name: "--blue-600: #0654F599", value: "#0654F599" },
-            { name: "--blue-600: #0654F580", value: "#0654F580" },
-            { name: "--blue-600: #0654F566", value: "#0654F566" },
-            { name: "--blue-600: #0654F54D", value: "#0654F54D" },
-            { name: "--blue-600: #0654F533", value: "#0654F533" },
-            { name: "--blue-600: #0654F51A", value: "#0654F51A" },
-            { name: "--blue-600: #0654F50D", value: "#0654F50D" },
-            { name: "--blue-600: #0654F508", value: "#0654F508" },
-            { name: "--blue-700: #0654F5FF", value: "#0654F5FF" },
-            { name: "--blue-800: #0C42C1FF", value: "#0C42C1FF" },
-            { name: "--blue-900: #113D97FF", value: "#113D97FF" },
-            { name: "--blue-950: #0F265CFF", value: "#0F265CFF" },
+            { name: "--blue-50: #EDF7FF", value: "#EDF7FF" },
+            { name: "--blue-100: #D7ECFF", value: "#D7ECFF" },
+            { name: "--blue-200: #B7DFFF", value: "#B7DFFF" },
+            { name: "--blue-300: #86CCFF", value: "#86CCFF" },
+            { name: "--blue-400: #4DAEFF", value: "#4DAEFF" },
+            { name: "--blue-500: #248AFF", value: "#248AFF" },
+            { name: "--blue-600: #0C6AFF", value: "#0C6AFF" },
+            { name: "--blue-700: #0654F5", value: "#0654F5" },
+            { name: "--blue-800: #0C42C1", value: "#0C42C1" },
+            { name: "--blue-900: #113D97", value: "#113D97" },
+            { name: "--blue-950: #0F285C", value: "#0F285C" },
           ],
         },
         {
           title: "Green",
           colors: [
-            { name: "--green-50: #FFF1F1FF", value: "#FFF1F1FF" },
-            { name: "--green-100: #FFDFE0FF", value: "#FFDFE0FF" },
-            { name: "--green-200: #FFC5C6FF", value: "#FFC5C6FF" },
-            { name: "--green-300: #FF9D9FFF", value: "#FF9D9FFF" },
-            { name: "--green-400: #FF6468FF", value: "#FF6468FF" },
-            { name: "--green-500: #FF2D32FF", value: "#FF2D32FF" },
-            { name: "--green-600: #ED151AFF", value: "#ED151AFF" },
-            { name: "--green-700: #C80D11FF", value: "#C80D11FF" },
-            { name: "--green-800: #A50F13FF", value: "#A50F13FF" },
-            { name: "--green-900: #881417FF", value: "#881417FF" },
-            { name: "--green-950: #4B0406FF", value: "#4B0406FF" },
-            { name: "--green-50: #FFF8EBFF", value: "#FFF8EBFF" },
-            { name: "--green-100: #FFEBC6FF", value: "#FFEBC6FF" },
-            { name: "--green-200: #FFD388FF", value: "#FFD388FF" },
-            { name: "--green-300: #FFB74AFF", value: "#FFB74AFF" },
-            { name: "--green-400: #FFA534FF", value: "#FFA534FF" },
-            { name: "--green-500: #F97707FF", value: "#F97707FF" },
-            { name: "--green-600: #DD5302FF", value: "#DD5302FF" },
-            { name: "--green-700: #B73606FF", value: "#B73606FF" },
-            { name: "--green-800: #94290CFF", value: "#94290CFF" },
-            { name: "--green-900: #7A220DFF", value: "#7A220DFF" },
-            { name: "--green-950: #460F02FF", value: "#460F02FF" },
-            { name: "--green-50: #FFFEE7FF", value: "#FFFEE7FF" },
-            { name: "--green-100: #FFFEC1FF", value: "#FFFEC1FF" },
-            { name: "--green-200: #FFF886FF", value: "#FFF886FF" },
-            { name: "--green-300: #FFEC41FF", value: "#FFEC41FF" },
-            { name: "--green-400: #FFDB0DFF", value: "#FFDB0DFF" },
-            { name: "--green-500: #FFCC00FF", value: "#FFCC00FF" },
-            { name: "--green-600: #D19500FF", value: "#D19500FF" },
-            { name: "--green-700: #A66A02FF", value: "#A66A02FF" },
-            { name: "--green-800: #89530AFF", value: "#89530AFF" },
-            { name: "--green-900: #74430FFF", value: "#74430FFF" },
-            { name: "--green-950: #442304FF", value: "#442304FF" },
+            { name: "--green-50: #F1FCF3", value: "#F1FCF3" },
+            { name: "--green-100: #DFF9E5", value: "#DFF9E5" },
+            { name: "--green-200: #C0F2CC", value: "#C0F2CC" },
+            { name: "--green-300: #8FE6A4", value: "#8FE6A4" },
+            { name: "--green-400: #57D175", value: "#57D175" },
+            { name: "--green-500: #34C759", value: "#34C759" },
+            { name: "--green-600: #22973F", value: "#22973F" },
+            { name: "--green-700: #1E7735", value: "#1E7735" },
+            { name: "--green-800: #1D5E2E", value: "#1D5E2E" },
+            { name: "--green-900: #194E28", value: "#194E28" },
+            { name: "--green-950: #082B13", value: "#082B13" },
+          ],
+        },
+        {
+          title: "Yellow",
+          colors: [
+            { name: "--yellow-50: #FFFEE7", value: "#FFFEE7" },
+            { name: "--yellow-100: #FFFEC1", value: "#FFFEC1" },
+            { name: "--yellow-200: #FFF886", value: "#FFF886" },
+            { name: "--yellow-300: #FFEC41", value: "#FFEC41" },
+            { name: "--yellow-400: #FFDB0D", value: "#FFDB0D" },
+            { name: "--yellow-500: #FFCC00", value: "#FFCC00" },
+            { name: "--yellow-600: #D19500", value: "#D19500" },
+            { name: "--yellow-700: #A66A02", value: "#A66A02" },
+            { name: "--yellow-800: #89530A", value: "#89530A" },
+            { name: "--yellow-900: #74430F", value: "#74430F" },
+            { name: "--yellow-950: #442304", value: "#442304" },
+          ],
+        },
+        {
+          title: "Purple",
+          colors: [
+            { name: "--purple-50: #FBF5FF", value: "#FBF5FF" },
+            { name: "--purple-100: #F6E8FF", value: "#F6E8FF" },
+            { name: "--purple-200: #EED4FF", value: "#EED4FF" },
+            { name: "--purple-300: #E1B3FF", value: "#E1B3FF" },
+            { name: "--purple-400: #CE82FE", value: "#CE82FE" },
+            { name: "--purple-500: #BE5AFA", value: "#BE5AFA" },
+            { name: "--purple-600: #A830ED", value: "#A830ED" },
+            { name: "--purple-700: #921FD1", value: "#921FD1" },
+            { name: "--purple-800: #7B1FAA", value: "#7B1FAA" },
+            { name: "--purple-900: #651A89", value: "#651A89" },
+            { name: "--purple-950: #460566", value: "#460566" },
+          ],
+        },
+        {
+          title: "Orange",
+          colors: [
+            { name: "--orange-50: #FFF8EB", value: "#FFF8EB" },
+            { name: "--orange-100: #FFEBC6", value: "#FFEBC6" },
+            { name: "--orange-200: #FFD388", value: "#FFD388" },
+            { name: "--orange-300: #FFB74A", value: "#FFB74A" },
+            { name: "--orange-400: #FFA534", value: "#FFA534" },
+            { name: "--orange-500: #FF9707", value: "#FF9707" },
+            { name: "--orange-600: #DD5302", value: "#DD5302" },
+            { name: "--orange-700: #B73606", value: "#B73606" },
+            { name: "--orange-800: #94290C", value: "#94290C" },
+            { name: "--orange-900: #7A220D", value: "#7A220D" },
+            { name: "--orange-950: #460F02", value: "#460F02" },
+          ],
+        },
+        {
+          title: "Red",
+          colors: [
+            { name: "--red-50: #FFFAF1", value: "#FFFAF1" },
+            { name: "--red-100: #FFDFE0", value: "#FFDFE0" },
+            { name: "--red-200: #FFC5C6", value: "#FFC5C6" },
+            { name: "--red-300: #FF9D9F", value: "#FF9D9F" },
+            { name: "--red-400: #FF6468", value: "#FF6468" },
+            { name: "--red-500: #FF2D32", value: "#FF2D32" },
+            { name: "--red-600: #ED151A", value: "#ED151A" },
+            { name: "--red-700: #C80D11", value: "#C80D11" },
+            { name: "--red-800: #A50F13", value: "#A50F13" },
+            { name: "--red-900: #881417", value: "#881417" },
+            { name: "--red-950: #4B0406", value: "#4B0406" },
           ],
         },
       ];
@@ -640,8 +715,111 @@ line-height: var(${lhVar}) → ${lhPx.toFixed(2)}px (${pxToRem(
         });
       }
 
+      // Semantic text color variables and their references
+      const textColorGroups = [
+        {
+          title: "Text Primary",
+          colors: [
+            { name: "--text-primary", ref: "--slate-950" },
+            { name: "--text-secondary", ref: "--slate-800" },
+            { name: "--text-tertiary", ref: "--slate-600" },
+            { name: "--text-quaternary", ref: "--slate-500" },
+          ],
+        },
+        {
+          title: "Text Inverted",
+          colors: [
+            { name: "--text-inverted-primary", ref: "--white: #FFFFFFFF" },
+            { name: "--text-inverted-secondary", ref: "--white: #FFFFFFE5" },
+            { name: "--text-inverted-tertiary", ref: "--white: #FFFFFFCC" },
+            { name: "--text-inverted-quaternary", ref: "--white: #FFFFFF99" },
+          ],
+        },
+        {
+          title: "Text Accent",
+          colors: [
+            { name: "--text-accent-primary", ref: "--blue-700" },
+            { name: "--text-accent-secondary", ref: "--blue-500" },
+            { name: "--text-accent-tertiary", ref: "--blue-400" },
+            { name: "--text-accent-quaternary", ref: "--blue-200" },
+          ],
+        },
+        {
+          title: "Text Success",
+          colors: [
+            { name: "--text-success-primary", ref: "--green-500" },
+            { name: "--text-success-secondary", ref: "--green-400" },
+            { name: "--text-success-tertiary", ref: "--green-300" },
+            { name: "--text-success-quaternary", ref: "--green-200" },
+          ],
+        },
+        {
+          title: "Text Caution",
+          colors: [
+            { name: "--text-caution-primary", ref: "--yellow-500" },
+            { name: "--text-caution-secondary", ref: "--yellow-400" },
+            { name: "--text-caution-tertiary", ref: "--yellow-300" },
+            { name: "--text-caution-quaternary", ref: "--yellow-200" },
+          ],
+        },
+        {
+          title: "Text Danger",
+          colors: [
+            { name: "--text-danger-primary", ref: "--red-800" },
+            { name: "--text-danger-secondary", ref: "--red-600" },
+            { name: "--text-danger-tertiary", ref: "--red-500" },
+            { name: "--text-danger-quaternary", ref: "--red-300" },
+          ],
+        },
+      ];
+
+      // Helper to get color value from colorGroups by ref name
+      function getColorValue(ref) {
+        // Try to match by exact name in colorGroups
+        for (const group of colorGroups) {
+          for (const color of group.colors) {
+            // For white, match by name prefix
+            if (
+              ref.startsWith("--white") &&
+              color.name.startsWith(ref.split(":")[0])
+            )
+              return color.value;
+            if (color.name.split(":")[0] === ref) return color.value;
+          }
+        }
+        // Fallback: return ref as color (for custom CSS vars)
+        return `var(${ref})`;
+      }
+
+      function renderTextColorTest() {
+        const test = document.getElementById("text-color-test");
+        if (!test) return;
+        test.innerHTML = "";
+        textColorGroups.forEach((group) => {
+          const groupDiv = document.createElement("div");
+          groupDiv.style.marginBottom = "2rem";
+          const heading = document.createElement("h3");
+          heading.textContent = group.title;
+          heading.style.font = "600 1.1rem/1.2 inherit";
+          heading.style.margin = "1.5rem 0 0.5rem";
+          groupDiv.appendChild(heading);
+
+          group.colors.forEach((color) => {
+            const sample = document.createElement("div");
+            sample.style.fontSize = "var(--fs-large-body, 1.375rem)";
+            sample.style.fontWeight = "600";
+            sample.style.marginBottom = "0.5rem";
+            sample.style.color = getColorValue(color.ref);
+            sample.textContent = color.name;
+            groupDiv.appendChild(sample);
+          });
+          test.appendChild(groupDiv);
+        });
+      }
+
       render();
       renderColorPalette();
+      renderTextColorTest();
       addEventListener("resize", () => requestAnimationFrame(render));
     </script>
   </body>
