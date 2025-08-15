@@ -112,9 +112,9 @@
         --fs-h4: var(--space-325);
         --fs-title: var(--space-350);
         --fs-subtitle: var(--space-300);
-        --fs-large: var(--space-275);
+        --fs-large-body: var(--space-275);
         --fs-body: var(--space-250);
-        --fs-small: var(--space-225);
+        --fs-small-body: var(--space-225);
         --fs-x-small: var(--space-200);
         --fs-label: var(--space-175);
         --fs-caption: var(--space-150);
@@ -127,9 +127,9 @@
         --lh-h4: var(--space-350);
         --lh-title: var(--space-350);
         --lh-subtitle: var(--space-325);
-        --lh-large: var(--space-300);
+        --lh-large-body: var(--space-300);
         --lh-body: var(--space-275);
-        --lh-small: var(--space-250);
+        --lh-small-body: var(--space-250);
         --lh-x-small: var(--space-225);
         --lh-label: var(--space-200);
         --lh-caption: var(--space-125);
@@ -146,9 +146,9 @@
           --fs-h4: var(--space-300);
           --fs-title: var(--space-325);
           --fs-subtitle: var(--space-275);
-          --fs-large: var(--space-250);
+          --fs-large-body: var(--space-250);
           --fs-body: var(--space-225);
-          --fs-small: var(--space-200);
+          --fs-small-body: var(--space-200);
           --fs-x-small: var(--space-175);
           --fs-label: var(--space-150);
           --fs-caption: var(--space-125);
@@ -161,9 +161,9 @@
           --lh-h4: var(--space-325);
           --lh-title: var(--space-325);
           --lh-subtitle: var(--space-300);
-          --lh-large: var(--space-275);
+          --lh-large-body: var(--space-275);
           --lh-body: var(--space-250);
-          --lh-small: var(--space-225);
+          --lh-small-body: var(--space-225);
           --lh-x-small: var(--space-200);
           --lh-label: var(--space-150);
           --lh-caption: var(--space-125);
@@ -188,9 +188,9 @@
           --fs-h4: var(--space-275);
           --fs-title: var(--space-300);
           --fs-subtitle: var(--space-250);
-          --fs-large: var(--space-225);
+          --fs-large-body: var(--space-225);
           --fs-body: var(--space-200);
-          --fs-small: var(--space-175);
+          --fs-small-body: var(--space-175);
           --fs-x-small: var(--space-150);
           --fs-label: var(--space-150);
           --fs-caption: var(--space-125);
@@ -203,9 +203,9 @@
           --lh-h4: var(--space-300);
           --lh-title: var(--space-300);
           --lh-subtitle: var(--space-275);
-          --lh-large: var(--space-250);
+          --lh-large-body: var(--space-250);
           --lh-body: var(--space-225);
-          --lh-small: var(--space-200);
+          --lh-small-body: var(--space-200);
           --lh-x-small: var(--space-175);
           --lh-label: var(--space-125);
           --lh-caption: var(--space-125);
@@ -228,9 +228,9 @@
           --fs-h4: var(--space-275);
           --fs-title: var(--space-300);
           --fs-subtitle: var(--space-250);
-          --fs-large: var(--space-225);
+          --fs-large-body: var(--space-225);
           --fs-body: var(--space-200);
-          --fs-small: var(--space-175);
+          --fs-small-body: var(--space-175);
           --fs-x-small: var(--space-150);
           --fs-label: var(--space-150);
           --fs-caption: var(--space-125);
@@ -243,9 +243,9 @@
           --lh-h4: var(--space-300);
           --lh-title: var(--space-300);
           --lh-subtitle: var(--space-275);
-          --lh-large: var(--space-250);
+          --lh-large-body: var(--space-250);
           --lh-body: var(--space-225);
-          --lh-small: var(--space-200);
+          --lh-small-body: var(--space-200);
           --lh-x-small: var(--space-175);
           --lh-label: var(--space-125);
           --lh-caption: var(--space-125);
@@ -332,6 +332,15 @@
       </details>
     </section>
 
+    <section>
+      <details open>
+        <summary>
+          <strong>Color Palette Test</strong>
+        </summary>
+        <div id="color-palette-test"></div>
+      </details>
+    </section>
+
     <script>
       /* Pairs to render */
       const pairs = [
@@ -343,9 +352,9 @@
         "h4",
         "title",
         "subtitle",
-        "large",
+        "large-body",
         "body",
-        "small",
+        "small-body",
         "x-small",
         "label",
         "caption",
@@ -397,8 +406,13 @@
           sample.className = "sample";
           sample.style.fontSize = `var(${fsVar})`;
           sample.style.lineHeight = `var(${lhVar})`;
-          sample.textContent =
-            "Я в своем познании настолько преисполнился. 0123456789";
+          if (k === "body") {
+            sample.textContent =
+              "Я в своем познании настолько преисполнился, что я как будто бы уже сто триллионов миллиардов лет проживаю на триллионах и триллионах таких же планет, как эта Земля, мне этот мир абсолютно понятен, и я здесь ищу только одного - покоя, умиротворения и вот этой гармонии, от слияния с бесконечно вечным, от созерцания великого фрактального подобия и от вот этого замечательного всеединства существа, бесконечно вечного, куда ни посмотри, хоть вглубь - бесконечно малое, хоть ввысь - бесконечное большое, понимаешь? 0123456789";
+          } else {
+            sample.textContent =
+              "Я в своем познании настолько преисполнился. 0123456789";
+          }
 
           // After in-DOM, read computed px
           card.innerHTML = `<div class="meta">${k}</div>`;
@@ -438,7 +452,196 @@ line-height: var(${lhVar}) → ${lhPx.toFixed(2)}px (${pxToRem(
           lines.join("\n");
       }
 
+      // Color palette data
+      const colorGroups = [
+        {
+          title: "White",
+          colors: [
+            { name: "--white: #FFFFFFFF", value: "#FFFFFFFF" },
+            { name: "--white: #FFFFFFE5", value: "#FFFFFFE5" },
+            { name: "--white: #FFFFFFCC", value: "#FFFFFFCC" },
+            { name: "--white: #FFFFFFB2", value: "#FFFFFFB2" },
+            { name: "--white: #FFFFFF99", value: "#FFFFFF99" },
+            { name: "--white: #FFFFFF80", value: "#FFFFFF80" },
+            { name: "--white: #FFFFFF66", value: "#FFFFFF66" },
+            { name: "--white: #FFFFFF4D", value: "#FFFFFF4D" },
+            { name: "--white: #FFFFFF33", value: "#FFFFFF33" },
+            { name: "--white: #FFFFFF1A", value: "#FFFFFF1A" },
+            { name: "--white: #FFFFFF0D", value: "#FFFFFF0D" },
+          ],
+        },
+        {
+          title: "Black",
+          colors: [
+            { name: "--black-100: #000000FF", value: "#000000FF" },
+            { name: "--black-90: #000000E5", value: "#000000E5" },
+            { name: "--black-80: #000000CC", value: "#000000CC" },
+            { name: "--black-70: #000000B2", value: "#000000B2" },
+            { name: "--black-60: #00000099", value: "#00000099" },
+            { name: "--black-50: #00000080", value: "#00000080" },
+            { name: "--black-40: #00000066", value: "#00000066" },
+            { name: "--black-30: #0000004D", value: "#0000004D" },
+            { name: "--black-20: #00000033", value: "#00000033" },
+            { name: "--black-10: #0000001A", value: "#0000001A" },
+            { name: "--black-10: #0000000D", value: "#0000000D" },
+            { name: "--black-0: #00000000", value: "#00000000" },
+          ],
+        },
+        {
+          title: "Transparent",
+          colors: [{ name: "--transparent: #FFFFFF00", value: "#FFFFFF00" }],
+        },
+        {
+          title: "Grey",
+          colors: [
+            { name: "--grey-50: #FDFDFDFF", value: "#FDFDFDFF" },
+            { name: "--grey-100: #FAFAFAFF", value: "#FAFAFAFF" },
+            { name: "--grey-200: #F5F5F5FF", value: "#F5F5F5FF" },
+            { name: "--grey-300: #EEEEEEFF", value: "#EEEEEEFF" },
+            { name: "--grey-400: #DEDEDEFF", value: "#DEDEDEFF" },
+            { name: "--grey-500: #C0C0C0FF", value: "#C0C0C0FF" },
+            { name: "--grey-600: #A0A0A0FF", value: "#A0A0A0FF" },
+            { name: "--grey-700: #808080FF", value: "#808080FF" },
+            { name: "--grey-800: #606060FF", value: "#606060FF" },
+            { name: "--grey-900: #404040FF", value: "#404040FF" },
+            { name: "--grey-950: #202020FF", value: "#202020FF" },
+          ],
+        },
+        {
+          title: "Primitive Slate",
+          colors: [
+            { name: "--slate-50: #F8FAFCFF", value: "#F8FAFCFF" },
+            { name: "--slate-100: #F0F0F6FF", value: "#F0F0F6FF" },
+            { name: "--slate-200: #E2E8F0FF", value: "#E2E8F0FF" },
+            { name: "--slate-300: #CBD5E1FF", value: "#CBD5E1FF" },
+            { name: "--slate-400: #94A3B8FF", value: "#94A3B8FF" },
+            { name: "--slate-500: #64748BFF", value: "#64748BFF" },
+            { name: "--slate-600: #475569FF", value: "#475569FF" },
+            { name: "--slate-700: #334155FF", value: "#334155FF" },
+            { name: "--slate-800: #1E293BFF", value: "#1E293BFF" },
+            { name: "--slate-900: #0F172AFF", value: "#0F172AFF" },
+            { name: "--slate-950: #020617FF", value: "#020617FF" },
+          ],
+        },
+        {
+          title: "Blue",
+          colors: [
+            { name: "--blue-50: #EDF7FFFF", value: "#EDF7FFFF" },
+            { name: "--blue-100: #D7ECFFFF", value: "#D7ECFFFF" },
+            { name: "--blue-200: #B7DFFFFF", value: "#B7DFFFFF" },
+            { name: "--blue-300: #86CCFFFF", value: "#86CCFFFF" },
+            { name: "--blue-400: #4DAEFFFF", value: "#4DAEFFFF" },
+            { name: "--blue-500: #248AFFFF", value: "#248AFFFF" },
+            { name: "--blue-600: #0654F5FF", value: "#0654F5FF" },
+            { name: "--blue-600: #0654F5E5", value: "#0654F5E5" },
+            { name: "--blue-600: #0654F5CC", value: "#0654F5CC" },
+            { name: "--blue-600: #0654F5B2", value: "#0654F5B2" },
+            { name: "--blue-600: #0654F599", value: "#0654F599" },
+            { name: "--blue-600: #0654F580", value: "#0654F580" },
+            { name: "--blue-600: #0654F566", value: "#0654F566" },
+            { name: "--blue-600: #0654F54D", value: "#0654F54D" },
+            { name: "--blue-600: #0654F533", value: "#0654F533" },
+            { name: "--blue-600: #0654F51A", value: "#0654F51A" },
+            { name: "--blue-600: #0654F50D", value: "#0654F50D" },
+            { name: "--blue-600: #0654F508", value: "#0654F508" },
+            { name: "--blue-700: #0654F5FF", value: "#0654F5FF" },
+            { name: "--blue-800: #0C42C1FF", value: "#0C42C1FF" },
+            { name: "--blue-900: #113D97FF", value: "#113D97FF" },
+            { name: "--blue-950: #0F265CFF", value: "#0F265CFF" },
+          ],
+        },
+        {
+          title: "Green",
+          colors: [
+            { name: "--green-50: #FFF1F1FF", value: "#FFF1F1FF" },
+            { name: "--green-100: #FFDFE0FF", value: "#FFDFE0FF" },
+            { name: "--green-200: #FFC5C6FF", value: "#FFC5C6FF" },
+            { name: "--green-300: #FF9D9FFF", value: "#FF9D9FFF" },
+            { name: "--green-400: #FF6468FF", value: "#FF6468FF" },
+            { name: "--green-500: #FF2D32FF", value: "#FF2D32FF" },
+            { name: "--green-600: #ED151AFF", value: "#ED151AFF" },
+            { name: "--green-700: #C80D11FF", value: "#C80D11FF" },
+            { name: "--green-800: #A50F13FF", value: "#A50F13FF" },
+            { name: "--green-900: #881417FF", value: "#881417FF" },
+            { name: "--green-950: #4B0406FF", value: "#4B0406FF" },
+            { name: "--green-50: #FFF8EBFF", value: "#FFF8EBFF" },
+            { name: "--green-100: #FFEBC6FF", value: "#FFEBC6FF" },
+            { name: "--green-200: #FFD388FF", value: "#FFD388FF" },
+            { name: "--green-300: #FFB74AFF", value: "#FFB74AFF" },
+            { name: "--green-400: #FFA534FF", value: "#FFA534FF" },
+            { name: "--green-500: #F97707FF", value: "#F97707FF" },
+            { name: "--green-600: #DD5302FF", value: "#DD5302FF" },
+            { name: "--green-700: #B73606FF", value: "#B73606FF" },
+            { name: "--green-800: #94290CFF", value: "#94290CFF" },
+            { name: "--green-900: #7A220DFF", value: "#7A220DFF" },
+            { name: "--green-950: #460F02FF", value: "#460F02FF" },
+            { name: "--green-50: #FFFEE7FF", value: "#FFFEE7FF" },
+            { name: "--green-100: #FFFEC1FF", value: "#FFFEC1FF" },
+            { name: "--green-200: #FFF886FF", value: "#FFF886FF" },
+            { name: "--green-300: #FFEC41FF", value: "#FFEC41FF" },
+            { name: "--green-400: #FFDB0DFF", value: "#FFDB0DFF" },
+            { name: "--green-500: #FFCC00FF", value: "#FFCC00FF" },
+            { name: "--green-600: #D19500FF", value: "#D19500FF" },
+            { name: "--green-700: #A66A02FF", value: "#A66A02FF" },
+            { name: "--green-800: #89530AFF", value: "#89530AFF" },
+            { name: "--green-900: #74430FFF", value: "#74430FFF" },
+            { name: "--green-950: #442304FF", value: "#442304FF" },
+          ],
+        },
+      ];
+
+      function renderColorPalette() {
+        const palette = document.getElementById("color-palette-test");
+        if (!palette) return;
+        palette.innerHTML = "";
+        colorGroups.forEach((group) => {
+          const groupDiv = document.createElement("div");
+          groupDiv.style.marginBottom = "2rem";
+          const heading = document.createElement("h3");
+          heading.textContent = group.title;
+          heading.style.font = "600 1.1rem/1.2 inherit";
+          heading.style.margin = "1.5rem 0 0.5rem";
+          groupDiv.appendChild(heading);
+
+          const row = document.createElement("div");
+          row.style.display = "flex";
+          row.style.flexWrap = "wrap";
+          row.style.gap = "1.5rem";
+          row.style.marginBottom = "0.5rem";
+
+          group.colors.forEach((color) => {
+            const col = document.createElement("div");
+            col.style.display = "flex";
+            col.style.flexDirection = "column";
+            col.style.alignItems = "center";
+            col.style.width = "6rem";
+
+            const square = document.createElement("div");
+            square.style.width = "4rem";
+            square.style.height = "4rem";
+            square.style.borderRadius = "1rem";
+            square.style.background = color.value;
+            square.style.border = "1px solid #e5e7eb";
+            square.style.marginBottom = "0.5rem";
+            square.style.boxShadow = "0 1px 2px 0 #0001";
+
+            const label = document.createElement("div");
+            label.className = "meta";
+            label.style.fontSize = "var(--fs-label, 0.875rem)";
+            label.style.textAlign = "center";
+            label.textContent = color.name;
+
+            col.appendChild(square);
+            col.appendChild(label);
+            row.appendChild(col);
+          });
+          groupDiv.appendChild(row);
+          palette.appendChild(groupDiv);
+        });
+      }
+
       render();
+      renderColorPalette();
       addEventListener("resize", () => requestAnimationFrame(render));
     </script>
   </body>
