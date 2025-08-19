@@ -1,0 +1,277 @@
+:root {
+  --space-0: 0rem;
+  --space-1: 0.0625rem;
+  --space-25: 0.125rem;
+  --space-50: 0.25rem;
+  --space-75: 0.375rem;
+  --space-100: 0.5rem;
+  --space-125: 0.625rem;
+  --space-150: 0.75rem;
+  --space-175: 0.875rem;
+  --space-200: 1rem;
+  --space-225: 1.125rem;
+  --space-250: 1.25rem;
+  --space-275: 1.375rem;
+  --space-300: 1.5rem;
+  --space-325: 1.625rem;
+  --space-350: 1.75rem;
+  --space-375: 1.875rem;
+  --space-400: 2rem;
+  --space-425: 2.125rem;
+  --space-450: 2.25rem;
+  --space-475: 2.375rem;
+  --space-500: 2.5rem;
+  --space-525: 2.625rem;
+  --space-550: 2.75rem;
+  --space-575: 2.875rem;
+  --space-600: 3rem;
+  --space-625: 3.125rem;
+  --space-650: 3.25rem;
+  --space-675: 3.375rem;
+  --space-700: 3.5rem;
+  --space-725: 3.625rem;
+  --space-750: 3.75rem;
+  --space-775: 3.875rem;
+  --space-800: 4rem;
+  --space-825: 4.125rem;
+  --space-850: 4.25rem;
+  --space-875: 4.375rem;
+  --space-900: 4.5rem;
+  --space-925: 4.625rem;
+  --space-950: 4.75rem;
+  --space-975: 4.875rem;
+  --space-1000: 5rem;
+  --space-1025: 5.125rem;
+  --space-1050: 5.25rem;
+  --space-1075: 5.375rem;
+  --space-1100: 5.5rem;
+  --space-1125: 5.625rem;
+  --space-1150: 5.75rem;
+  --space-1175: 5.875rem;
+  --space-1200: 6rem;
+  --space-1225: 6.125rem;
+  --space-1250: 6.25rem;
+  --space-1275: 6.375rem;
+  --space-1300: 6.5rem;
+  --space-1325: 6.625rem;
+  --space-1350: 6.75rem;
+  --space-1375: 6.875rem;
+  --space-1400: 7rem;
+  --space-1425: 7.125rem;
+  --space-1450: 7.25rem;
+  --space-1475: 7.375rem;
+  --space-1500: 7.5rem;
+  --space-1525: 7.625rem;
+  --space-1550: 7.75rem;
+  --space-1575: 7.875rem;
+  --space-1600: 8rem;
+  --space-1625: 8.125rem;
+  --space-1650: 8.25rem;
+  --space-1675: 8.375rem;
+  --space-1700: 8.5rem;
+  --space-1725: 8.625rem;
+  --space-1750: 8.75rem;
+  --space-1775: 8.875rem;
+  --space-1800: 9rem;
+  --space-1825: 9.125rem;
+  --space-1850: 9.25rem;
+  --space-1875: 9.375rem;
+  --space-1900: 9.5rem;
+  --space-1925: 9.625rem;
+  --space-1950: 9.75rem;
+  --space-1975: 9.875rem;
+  --space-2000: 10rem;
+  --space-2250: 11.25rem;
+  --space-2500: 12.5rem;
+  --space-2750: 13.75rem;
+  --space-3000: 15rem;
+  --space-3250: 16.25rem;
+  --space-3500: 17.5rem;
+  --space-3750: 18.75rem;
+  --space-4000: 20rem;
+}
+
+/* ===== Desktop (1280–1727px) ===== */
+@media (min-width: 1280px) {
+  :root {
+    --fs-display-2: var(--space-650);
+    --fs-display-3: var(--space-550);
+    --fs-h1: var(--space-475);
+    --fs-h2: var(--space-400);
+    --fs-h3: var(--space-350);
+    --fs-h4: var(--space-300);
+    --fs-title: var(--space-325);
+    --fs-subtitle: var(--space-275);
+    --fs-large-body: var(--space-250);
+    --fs-body: var(--space-225);
+    --fs-small-body: var(--space-200);
+    --fs-x-small: var(--space-175);
+    --fs-label: var(--space-175);
+    --fs-caption: var(--space-150);
+
+    --lh-display-2: var(--space-650);
+    --lh-display-3: var(--space-550);
+    --lh-h1: var(--space-500);
+    --lh-h2: var(--space-425);
+    --lh-h3: var(--space-375);
+    --lh-h4: var(--space-325);
+    --lh-title: var(--space-325);
+    --lh-subtitle: var(--space-300);
+    --lh-large-body: var(--space-275);
+    --lh-body: var(--space-250);
+    --lh-small-body: var(--space-225);
+    --lh-x-small: var(--space-200);
+    --lh-label: var(--space-175);
+    --lh-caption: var(--space-150);
+  }
+}
+
+/* ===== Default (≥1728px) ===== */
+:root {
+  --fs-display-2: var(--space-675);
+  --fs-display-3: var(--space-575);
+  --fs-h1: var(--space-500);
+  --fs-h2: var(--space-425);
+  --fs-h3: var(--space-375);
+  --fs-h4: var(--space-325);
+  --fs-title: var(--space-350);
+  --fs-subtitle: var(--space-300);
+  --fs-large-body: var(--space-275);
+  --fs-body: var(--space-250);
+  --fs-small-body: var(--space-225);
+  --fs-x-small: var(--space-200);
+  --fs-label: var(--space-175);
+  --fs-caption: var(--space-150);
+
+  --lh-display-2: var(--space-675);
+  --lh-display-3: var(--space-575);
+  --lh-h1: var(--space-525);
+  --lh-h2: var(--space-450);
+  --lh-h3: var(--space-400);
+  --lh-h4: var(--space-350);
+  --lh-title: var(--space-350);
+  --lh-subtitle: var(--space-325);
+  --lh-large-body: var(--space-300);
+  --lh-body: var(--space-275);
+  --lh-small-body: var(--space-250);
+  --lh-x-small: var(--space-225);
+  --lh-label: var(--space-200);
+  --lh-caption: var(--space-150);
+}
+
+/* ===== Tablet (834–1727px) ===== */
+@media (max-width: 1279px) and (min-width: 834px) {
+  :root {
+    --fs-display-2: var(--space-625);
+    --fs-display-3: var(--space-550);
+    --fs-h1: var(--space-475);
+    --fs-h2: var(--space-400);
+    --fs-h3: var(--space-350);
+    --fs-h4: var(--space-300);
+    --fs-title: var(--space-325);
+    --fs-subtitle: var(--space-275);
+    --fs-large-body: var(--space-250);
+    --fs-body: var(--space-225);
+    --fs-small-body: var(--space-200);
+    --fs-x-small: var(--space-175);
+    --fs-label: var(--space-175);
+    --fs-caption: var(--space-150);
+
+    --lh-display-2: var(--space-625);
+    --lh-display-3: var(--space-550);
+    --lh-h1: var(--space-500);
+    --lh-h2: var(--space-425);
+    --lh-h3: var(--space-375);
+    --lh-h4: var(--space-325);
+    --lh-title: var(--space-325);
+    --lh-subtitle: var(--space-300);
+    --lh-large-body: var(--space-275);
+    --lh-body: var(--space-250);
+    --lh-small-body: var(--space-225);
+    --lh-x-small: var(--space-200);
+    --lh-label: var(--space-175);
+    --lh-caption: var(--space-150);
+  }
+
+  /* 1) Make #grid flex column on tablet */
+  #grid {
+    display: flex !important;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* ===== Mobile (380–833px) ===== */
+@media (max-width: 833px) and (min-width: 380px) {
+  :root {
+    --fs-display-2: var(--space-600);
+    --fs-display-3: var(--space-525);
+    --fs-h1: var(--space-450);
+    --fs-h2: var(--space-375);
+    --fs-h3: var(--space-325);
+    --fs-h4: var(--space-275);
+    --fs-title: var(--space-300);
+    --fs-subtitle: var(--space-250);
+    --fs-large-body: var(--space-225);
+    --fs-body: var(--space-200);
+    --fs-small-body: var(--space-175);
+    --fs-x-small: var(--space-175);
+    --fs-label: var(--space-175);
+    --fs-caption: var(--space-150);
+
+    --lh-display-2: var(--space-600);
+    --lh-display-3: var(--space-525);
+    --lh-h1: var(--space-475);
+    --lh-h2: var(--space-400);
+    --lh-h3: var(--space-350);
+    --lh-h4: var(--space-300);
+    --lh-title: var(--space-300);
+    --lh-subtitle: var(--space-275);
+    --lh-large-body: var(--space-250);
+    --lh-body: var(--space-225);
+    --lh-small-body: var(--space-200);
+    --lh-x-small: var(--space-175);
+    --lh-label: var(--space-175);
+    --lh-caption: var(--space-150);
+  }
+}
+
+/* ===== Mobile smaller (≤379px) — 3) clamp(vw) so it doesn’t break =====
+   Baseline at 375px width; min at 320px; max = your original rem.
+   vw = px/375 * 100. */
+@media (max-width: 379px) {
+  html {
+    font-size: 5vw;
+  }
+  :root {
+    --fs-display-2: var(--space-600);
+    --fs-display-3: var(--space-525);
+    --fs-h1: var(--space-450);
+    --fs-h2: var(--space-375);
+    --fs-h3: var(--space-325);
+    --fs-h4: var(--space-275);
+    --fs-title: var(--space-300);
+    --fs-subtitle: var(--space-250);
+    --fs-large-body: var(--space-225);
+    --fs-body: var(--space-200);
+    --fs-small-body: var(--space-175);
+    --fs-x-small: var(--space-175);
+    --fs-label: var(--space-175);
+    --fs-caption: var(--space-150);
+
+    --lh-display-2: var(--space-600);
+    --lh-display-3: var(--space-525);
+    --lh-h1: var(--space-475);
+    --lh-h2: var(--space-400);
+    --lh-h3: var(--space-350);
+    --lh-h4: var(--space-300);
+    --lh-title: var(--space-300);
+    --lh-subtitle: var(--space-275);
+    --lh-large-body: var(--space-250);
+    --lh-body: var(--space-225);
+    --lh-small-body: var(--space-200);
+    --lh-x-small: var(--space-175);
+    --lh-label: var(--space-175);
+    --lh-caption: var(--space-150);
+  }
+}
